@@ -22,6 +22,7 @@ Depending on your environment you might want to run these commands afterwards:
 * export TERM=xterm //from inside your container if you want to use nano or vim, due to a docker bug: https://github.com/docker/docker/issues/9299
 
 Inside your container if you run php -v you should get:
+
     PHP 7.0.9 (cli) (built: Jul 29 2016 20:54:37) ( NTS )
     Copyright (c) 1997-2016 The PHP Group
     Zend Engine v3.0.0, Copyright (c) 1998-2016 Zend Technologies
