@@ -33,6 +33,10 @@ EXPOSE 22
 
 RUN sh -x /scripts/install-nodejs
 
+########### xDebug ###########
+
+RUN sh -x /scripts/install-xdebug
+
 ########### Samba ###########
 
 # Add Samba (don't start by default as it can slow things down)
