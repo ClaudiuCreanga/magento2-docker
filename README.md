@@ -5,7 +5,7 @@
 To start, you can just copy the docker-compose.yml file to your project folder and run:
 
     docker-compose up -d
-    
+
 Depending on your environment you might want to run these commands afterwards:
 
 * composer install in your container
@@ -33,7 +33,7 @@ container is started, a Samba server is launched to give remote
 access to the files in the container. Just remember that Samba
 can slow things down.
 
-## Current manual build: 
+## Current manual build (claudiucreanga/magento2): 
 * Debian GNU/Linux 8.5
 * Apache/2.4.10 (Debian)
 * PHP 7.0.9
@@ -42,4 +42,9 @@ can slow things down.
 * NodeJs 6.3.1
 * Npm 3.10.3
 * Magento2 crons
+
+## Automatic build (claudiucreanga/magento2-docker) locked at:
+* MariaDB 10.1 
+* xDebug 2.4.1
+* NodeJs 6
 
