@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Install NodeJS (after curl is installed above).
+curl -sL https://deb.nodesource.com/setup_6.x | bash -
+apt-get update
+apt-get install -y nodejs

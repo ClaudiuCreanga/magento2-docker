@@ -1,0 +1,16 @@
+sitename:
+  image: claudiucreaga/magento2
+  domainname: sitename.docker
+  hostname: sitename
+  ports:
+    - "881:80"
+  environment:
+    - SAMBA_START=1
+  volumes:
+    - ~/.composer:/home/magento/.composer
+    - ./composer.json:/magento2/composer.json
+    - ./composer.lock:/magento2/composer.lock
+    - ./app/:/magento2/app/
+    - ./dev/:/magento2/dev/
+    - ./lib/:/magento2/lib/
+    - ./setup/:/magento2/setup/
