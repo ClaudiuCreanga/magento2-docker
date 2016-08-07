@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Install MariaDB 10.0 instead of MySQL 5.6 as MySQL does not appear available
+# Install MariaDB 10.1 
 # any more via apt-get according to error message.
 # The following was adapted from:
 # https://github.com/docker-library/mariadb/blob/2a8c48a54d8210241861740ea76b5aedf4da681f/10.0/Dockerfile

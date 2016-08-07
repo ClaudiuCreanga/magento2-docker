@@ -33,8 +33,13 @@ container is started, a Samba server is launched to give remote
 access to the files in the container. Just remember that Samba
 can slow things down.
 
-## Current build: 
+## Current manual build: 
+* Debian GNU/Linux 8.5
+* Apache/2.4.10 (Debian)
 * PHP 7.0.9
 * MariaDB 10.1 
 * xDebug 2.4.1
+* NodeJs 6.3.1
+* Npm 3.10.3
+* Magento2 crons
 
