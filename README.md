@@ -1,7 +1,7 @@
 Magento 2 Docker Image
 =================================
 
-To start, use
+To start, you can just copy the docker-compose.yml file to your project folder and run:
 
     docker-compose up -d
 
