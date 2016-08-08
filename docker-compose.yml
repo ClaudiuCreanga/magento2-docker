@@ -5,7 +5,7 @@ sitename:
   ports:
     - "882:80"
   environment:
-    - SAMBA_START=1
+    - SAMBA_START=0
   volumes:
     - ~/.composer:/home/magento/.composer
     - ./composer.json:/magento2/composer.json

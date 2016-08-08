@@ -19,5 +19,7 @@ a2enmod rewrite
 
 # Expand default memory limit.
 cat <<EOF > /usr/local/etc/php/php.ini
-memory_limit = 2048M
+memory_limit = 3072M
+display_errors = On
+error_reporting = E_ALL
 EOF
