@@ -31,6 +31,8 @@ service cron start
 sudo -u ${MAGENTO_USER} sh -c "echo 'export TERM=xterm' >> /home/magento/.bashrc"
 sudo -u ${MAGENTO_USER} sh -c "echo 'export PATH=\${PATH}:/magento2/bin' >> /home/magento/.bashrc"
 sudo -u ${MAGENTO_USER} sh -c "echo 'alias deploy=\"magento setup:static-content:deploy en_GB\"' >> /home/magento/.bashrc"
+sudo -u ${MAGENTO_USER} sh -c "echo 'alias refresh=\"source /home/magento/.bashrc\"' >> /home/magento/.bashrc"
+sudo -u ${MAGENTO_USER} sh -c "echo 'alias editbash=\"sudo nano /home/magento/.bashrc\"' >> /home/magento/.bashrc"
 sudo -u ${MAGENTO_USER} sh -c "echo 'alias upg=\"magento setup:upgrade\"' >> /home/magento/.bashrc"
 sudo -u ${MAGENTO_USER} sh -c "echo 'alias gw=\"grunt watch\"' >> /home/magento/.bashrc"
 sudo -u ${MAGENTO_USER} sh -c "echo 'PS1=m2$\ ' >> /home/magento/.bashrc"
