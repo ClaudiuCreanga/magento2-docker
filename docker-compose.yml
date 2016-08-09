@@ -1,9 +1,11 @@
 sitename:
-  image: claudiucreanga/magento2
+  image: claudiucreanga/magento2-docker
   domainname: sitename.docker
   hostname: sitename
   ports:
-    - "882:80"
+    - "80:80"
+    - "3000:3000"
+    - "9000:9000"
   environment:
     - SAMBA_START=0
   volumes:

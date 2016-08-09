@@ -17,9 +17,10 @@ Depending on your environment you might want to run these commands afterwards:
 
 ## Useful commands:
 
-* docker exec -it [container_id] bash //logs you in the container, apache root folder magento2
-* docker cp folder [container_id]:/magento2/ //copy files from host to container
-* export TERM=xterm //from inside your container if you want to use nano or vim, due to a docker bug: https://github.com/docker/docker/issues/9299
+* docker exec -it [container_id] bash (logs you in the container, apache root folder magento2)
+* docker cp folder [container_id]:/magento2/ (copy files from host to container)
+* export TERM=xterm (from inside your container if you want to use nano or vim, due to a docker bug: https://github.com/docker/docker/issues/9299)
+* bash profile is located at /home/magento/.bashrc
 
 Inside your container if you run php -v you should get:
 
@@ -33,6 +34,11 @@ container is started, a Samba server is launched to give remote
 access to the files in the container. Just remember that Samba
 can slow things down.
 
+## Automatic build (claudiucreanga/magento2-docker) locked at (recommended to use):
+* MariaDB 10.1 
+* xDebug 2.4.1
+* NodeJs 6
+
 ## Current manual build (claudiucreanga/magento2): 
 * Debian GNU/Linux 8.5
 * Apache/2.4.10 (Debian)
@@ -41,10 +47,8 @@ can slow things down.
 * xDebug 2.4.1
 * NodeJs 6.3.1
 * Npm 3.10.3
+* Grunt cli 1.2
 * Magento2 crons
 
-## Automatic build (claudiucreanga/magento2-docker) locked at:
-* MariaDB 10.1 
-* xDebug 2.4.1
-* NodeJs 6
+
 
