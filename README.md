@@ -1,6 +1,13 @@
 # Magento 2 Docker Image with xDebug, NodeJs, MariaDB
 
+
 ## Usage
+
+If you start a project run the composer create command:
+```
+composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition <installation directory name>
+```
+If you are cloning and existing project, clone the project before running the docker-compose up command.
 
 To start, you can just copy the docker-compose.yml file to your project folder and run:
 
