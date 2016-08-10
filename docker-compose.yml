@@ -16,3 +16,4 @@ sitename:
     - ./dev/:/magento2/dev/
     - ./lib/:/magento2/lib/
     - ./setup/:/magento2/setup/
+    - ./vendor/:/magento2/vendor/
