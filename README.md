@@ -30,7 +30,7 @@ Depending on your environment you might want to run these commands afterwards:
 * bash profile is located at /home/magento/.bashrc
 
 ## xDebug:
-By default xdebug is disabled to improve performance. if you want to enable it:
+By default xdebug is disabled to improve performance. If you want to enable it:
 * Uncomment zend_extension line in /usr/local/etc/php/php.ini
 * Enable xdebug in /usr/local/etc/php/conf.d/xdebug.ini
 
