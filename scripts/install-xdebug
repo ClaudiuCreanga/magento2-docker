@@ -1,9 +1,10 @@
 #!/bin/sh
 
-# Install xdebug
+# Install xdebug, but leave it disabled
 
 touch /usr/local/etc/php/conf.d/xdebug.ini
 echo "xdebug.remote_enable=0" >> /usr/local/etc/php/conf.d/xdebug.ini
+echo "xdebug.profiler_enable=0" >> /usr/local/etc/php/conf.d/xdebug.ini
 echo "xdebug.remote_autostart=0" >> /usr/local/etc/php/conf.d/xdebug.ini 
 echo "xdebug.remote_connect_back=0" >> /usr/local/etc/php/conf.d/xdebug.ini 
 echo "xdebug.remote_port=9000" >> /usr/local/etc/php/conf.d/xdebug.ini 
@@ -18,4 +19,4 @@ phpize && \
 ./configure && \
 make && \
 cp modules/xdebug.so /usr/local/lib/php/extensions/no-debug-non-zts-20151012 && \
-echo "zend_extension = /usr/local/lib/php/extensions/no-debug-non-zts-20151012/xdebug.so" >>  /usr/local/etc/php/php.ini
+echo ";zend_extension = /usr/local/lib/php/extensions/no-debug-non-zts-20151012/xdebug.so" >>  /usr/local/etc/php/php.ini
