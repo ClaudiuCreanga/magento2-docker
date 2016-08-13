@@ -29,6 +29,11 @@ Depending on your environment you might want to run these commands afterwards:
 * export TERM=xterm (from inside your container if you want to use nano or vim, due to a docker bug: https://github.com/docker/docker/issues/9299)
 * bash profile is located at /home/magento/.bashrc
 
+## xDebug:
+By default xdebug is disabled to improve performance. if you want to enable it:
+* Uncomment zend_extension line in /usr/local/etc/php/php.ini
+* Enable xdebug in /usr/local/etc/php/conf.d/xdebug.ini
+
 Inside your container if you run php -v you should get:
 
     PHP 7.0.9 (cli) (built: Jul 29 2016 20:54:37) ( NTS )
