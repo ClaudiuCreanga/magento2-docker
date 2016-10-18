@@ -10,6 +10,7 @@ docker-php-ext-configure gd \
 
 docker-php-ext-install gd intl mbstring mcrypt pdo_mysql xsl zip ext-bcmath mysqli mysql
 
+
 apt-get install -y vim git curl net-tools telnet sudo cron
 
 curl -sS https://getcomposer.org/installer | \
