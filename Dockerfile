@@ -1,4 +1,4 @@
-FROM php:7.1-rc-apache
+FROM php:7.0-apache
 MAINTAINER Claudiu Creanga
 
 ADD scripts /scripts
