@@ -20,7 +20,7 @@ RUN sh -x /scripts/install-php-extras
 # Check latest version number at https://hub.docker.com/_/mariadb/
 # (old versions are removed from site - only recent version is kept)
 ENV MARIADB_MAJOR 10.1
-ENV MARIADB_VERSION 10.1.18+maria-1~jessie
+ENV MARIADB_VERSION 10.1.16+maria-1~jessie
 
 RUN sh -x /scripts/install-mysql
 
